@@ -289,3 +289,21 @@ The API will return three error types when request fail:
 "success": true
 }
 ```
+
+### Unit Test
+After implement each test cases, the finally result look like:
+
+```
+(trivia) akiras-MacBook-Air:backend akira$ python3 test_flaskr.py
+/Users/akira/FSND/projects/02_trivia_api/starter/trivia/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py:225: SADeprecationWarning: The 'postgres' dialect name has been renamed to 'postgresql'
+  loader = self.auto_fn(name)
+/Users/akira/FSND/projects/02_trivia_api/starter/trivia/lib/python3.7/site-packages/flask_cors/core.py:322: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  and isinstance(obj, collections.Iterable)):
+test_flaskr.py:76: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(data['success'], True)
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.994s
+
+OK
+```
