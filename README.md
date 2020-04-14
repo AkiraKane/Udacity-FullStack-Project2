@@ -291,7 +291,7 @@ The API will return three error types when request fail:
 ```
 
 ### Unit Test
-After implement each test cases, the finally result look like:
+After implementing each test case based on the endpoints and error handlers, the finally result looks like:
 
 ```
 (trivia) akiras-MacBook-Air:backend akira$ python3 test_flaskr.py
